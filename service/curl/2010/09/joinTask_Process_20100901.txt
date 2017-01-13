@@ -1,0 +1,130 @@
+Time:2010-09-01 09:21:31
+url:http://www.zhubajie.com/bidinfo-415761-1.html
+title:网站修改~特急
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415761&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415761-1.html
+redirect:/bid_detail-415761-0-0-0-0.html
+
+
+Time:2010-09-01 09:21:40
+url:http://www.zhubajie.com/bidinfo-415811-1.html
+title:网站建设，仿站
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415811&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415811-1.html
+redirect:/bid_detail-415811-0-0-0-0.html
+
+
+Time:2010-09-01 09:22:10
+url:http://www.zhubajie.com/bidinfo-415443-1.html
+title:成人用品竞价网站竞标
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415443&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415443-1.html
+redirect:/bid_detail-415443-0-0-0-0.html
+
+
+Time:2010-09-01 09:22:23
+url:http://www.zhubajie.com/bidinfo-415460-1.html
+title:Dedecms utf-8根据效果图建站——任务简单
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415460&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415460-1.html
+redirect:/bid_detail-415460-0-0-0-0.html
+
+
+Time:2010-09-01 09:22:35
+url:http://www.zhubajie.com/bidinfo-415435-1.html
+title:网站模板模仿
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415435&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415435-1.html
+redirect:/bid_detail-415435-0-0-0-0.html
+
+
+Time:2010-09-01 09:22:42
+url:http://www.zhubajie.com/bidinfo-415371-1.html
+title:网站程序修改（网胜.net b2b程序 )
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415371&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415371-1.html
+redirect:/bid_detail-415371-0-0-0-0.html
+
+
+Time:2010-09-01 09:22:58
+url:http://www.zhubajie.com/bidinfo-415376-1.html
+title:制作一个可在Linux下使用的JSP网站
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415376&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415376-1.html
+redirect:/bid_detail-415376-0-0-0-0.html
+
+
+Time:2010-09-01 09:56:40
+url:http://www.zhubajie.com/bidinfo-415903-1.html
+title:建筑绿化在线信息网站
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415903&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415903-1.html
+redirect:/bid_detail-415903-0-0-0-0.html
+
+
+Time:2010-09-01 09:56:55
+url:http://www.zhubajie.com/bidinfo-415897-1.html
+title:仿国外一个在线订花网
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415897&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415897-1.html
+redirect:/bid_detail-415897-0-0-0-0.html
+
+
+Time:2010-09-01 10:52:20
+url:http://www.zhubajie.com/bidinfo-415771-1.html
+title:交友网站制作
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415771&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415771-1.html
+redirect:/bid_detail-415771-0-0-0-0.html
+
+
+Time:2010-09-01 10:52:33
+url:http://www.zhubajie.com/bidinfo-415945-1.html
+title:返利网程序,最好是用DZ做!
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=415945&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-415945-1.html
+redirect:/bid_detail-415945-0-0-0-0.html
+
+
+Time:2010-09-01 11:15:40
+url:http://www.zhubajie.com/bidinfo-416016-1.html
+title:用UCHOME仿站
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=416016&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdizcus%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-416016-1.html
+redirect:/bid_detail-416016-0-0-0-0.html
+
+
+Time:2010-09-01 12:06:30
+url:http://www.zhubajie.com/bidinfo-416008-1.html
+title:网站简单修改
+posturi:http://www.zhubajie.com/task/?mod=bid&com=handle&t=6&tid=416008&myabout=%E4%B8%93%E6%B3%A8+Discuz%21X%2Cuchome%EF%BC%8Cdiscuz%2Csupesite%2Cecshop%2Cecmall%E5%BA%B7%E7%9B%9B%E4%BA%A7%E5%93%81%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91QQ1467056255&myamount=50&myday=2&bmid=
+t:1
+msg:您已经成功提交竞标，请等待投标者选择
+rurl:/bidinfo-416008-1.html
+redirect:/bid_detail-416008-0-0-0-0.html
+
+

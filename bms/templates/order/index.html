@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php include T(ROUTE_M,'public','header');?>
+<script type="text/javascript" src="<?php echo JS_URL;?>My97DatePicker/WdatePicker.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<?php include T(ROUTE_M,'public','nav');?>
+		<div id="page-wrapper">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header">订单管理</h1>
+				</div>
+				<!-- /.col-lg-12 -->
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- /.panel -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<form class="form-inline" name="searchform" action="<?php echo pfUrl('','user','index');?>" method="GET">
+								<input type="hidden" value="order" name="c"> <input type="hidden" value="index" name="a"> <input type="hidden" name="s" value="is_post" />
+								<div class="box row">
+									<div class="col-md-4">
+										订单号：<input name="order_sn" class="form-control" value="<?php echo $filter['order_sn']; ?>" />
+									</div>
+									<div class="col-md-4">
+										用户名：<input name="user_name" class="form-control" value="<?php echo $filter['user_name']; ?>" />
+									</div>
+									<div class="col-md-4">
+										用户昵称：<input name="name" class="form-control" value="<?php echo $filter['name']; ?>" />
+									</div>
+								</div>
+								<div class="box row">
+									<div class="col-md-4">
+										手机号码：<input name="phone" class="form-control" value="<?php echo $filter['phone']; ?>" />
+									</div>
+									<div class="col-md-8">
+										支付时间： 
+										<input name="s_add_time" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})" readonly="readonly" class="form-control" value="<?php echo isset($filter["s_add_time"]) ? $filter["s_add_time"] : ""; ?>"/> 
+										- 
+										<input name="e_add_time" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})" readonly="readonly" class="form-control" value="<?php echo isset($filter["e_add_time"]) ? $filter["e_add_time"] : ""; ?>"/>
+									</div>
+								</div>
+								<div class="box row">
+									<div class="col-md-4">
+										排序： <select name="order" class="form-control">
+											<option value="" <?php if($filter['order']=='') echo 'selected="selected"';?>>默认</option>
+											<option value="amount" <?php if($filter['order']=='amount') echo 'selected="selected"';?>>订单金额</option>
+										</select>
+									</div>
+									<div class="col-md-4">
+										<input type="submit" name="search" class="btn btn-primary btn-sm" onclick="return check_form();" value="搜索" />
+										<a class="btn btn-default btn-sm" href="<?php echo pfUrl('','order','index');?>">重置</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="table-responsive">
+										<table class="table table-bordered table-hover table-striped">
+											<thead>
+												<tr>
+													<th>订单号</th>
+													<th>用户账号</th>
+													<th>用户昵称</th>
+													<th>订单金额</th>
+													<th>支付时间</th>
+													<th>手机号码</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody>
+												<?php foreach($lists as $item) {?>
+												<tr>
+													<td>
+														<?php echo $item['order_sn']?>
+													</td>
+													<td>
+														<?php echo $item['user_name']?>
+													</td>
+													<td>
+														<?php echo $item['name']?>
+													</td>
+													<td>
+														<?php echo $item['amount']?>
+													</td>
+													<td>
+														<?php echo date('Y-m-d H:i:s', $item['add_time'])?>
+													</td>
+													<td>
+														<?php echo $item['phone']?>
+													</td>
+													<td>
+														<a class="remark" href="javascript:;" remark="<?php echo $item['remark'] ?>">查看备注</a>
+													</td>
+												</tr>
+												<?}?>
+											</tbody>
+										</table>
+										<?php echo $pages;?>
+									</div>
+									<!-- /.table-responsive -->
+								</div>
+								<!-- /.col-lg-4 (nested) -->
+								<div class="col-lg-8">
+									<div id="morris-bar-chart"></div>
+								</div>
+								<!-- /.col-lg-8 (nested) -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.panel-body -->
+					</div>
+					<!-- /.panel -->
+
+					<!-- /.panel -->
+				</div>
+				<!-- /.col-lg-8 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /#page-wrapper -->
+	</div>
+	<div class="modal" id="remark_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">查看备注</h4>
+            </div>
+            <div class="modal-body">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea id="remark" name="remark" class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(".remark").click(function () {
+            $("#remark_modal #remark").val($(this).attr("remark"));
+            $("#remark_modal").modal();
+        });
+    });
+</script>
+	<?php include T(ROUTE_M,'public','footer');?>
+</body>
+</html>

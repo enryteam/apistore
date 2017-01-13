@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>名片识别--南京蒽凯Q825562866</title>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+function previewFile() {
+
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+  reader.addEventListener("load", function () {
+    //preview.src = reader.result;
+    $("#datamsg").html("<font color=red>上传识别中</font>");
+
+	  $.ajax ({
+      	type: 'POST',
+        url:  'http://apistore.51daniu.cn/rest/index.php',
+        dataType: 'json',
+        data: {"c":"ocr","a":"namecard","img":encodeURIComponent(reader.result)},
+        success: function(response)
+		    {
+              //var responseObj = $.parseJSON(response);
+              $("#datamsg").html("<font color=red>上传成功</font>");
+              var ret="";
+              ret +="<br>姓名："+response.data.name;
+
+              ret +="<br>公司："+response.data.company[0];
+
+              ret +="<br>地址："+response.data.addr[0];
+              ret +="<br>头衔："+response.data.title[0];
+
+              ret +="<br>手机："+response.data.tel_cell[0];
+
+              ret +="<br>座机："+response.data.tel_work[0];
+			        $("#rtn").html(ret+'<hr><img src="http://apistore.51daniu.cn/rest/namecard.png" >');
+        },
+		error: function (data)
+		{
+			alert(data.message);
+		}
+    });
+
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
+</script>
+</head>
+<body>
+下载测试图片<a href="http://apistore.51daniu.cn/rest/namecard.png" target="_blank"><img src="http://apistore.51daniu.cn/rest/namecard.png" /></a><br />
+<input type="hidden" id="cover" name="cover" value=""  />
+			<input type="file" value="上传" id="s_cover" name="s_cover" onChange="previewFile()">
+			<span id="datamsg">上传名片</span>
+      <br /><br />
+      <p id="rtn"></p>
+
+</body>
+</html>

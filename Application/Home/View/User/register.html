@@ -1,0 +1,37 @@
+<include file="Common/header" />
+<link rel="stylesheet" href="__PUBLIC__/css/login.css" />
+
+    <div class="container">
+
+      <form class="form-signin" method="post">
+        <h3 class="form-signin-heading">{$Think.Lang.register_new_account}</h3>
+        <input type="text" class="input-block-level" name="username" placeholder="{$Think.Lang.username_description}">
+        <input type="password" class="input-block-level" name="password"  placeholder="{$Think.Lang.password}">
+        <input type="password" class="input-block-level" name="confirm_password"  placeholder="{$Think.Lang.password_again}">
+        <if  condition="$CloseVerify != 1">
+        <input type="text" class="input-block-level" name="v_code"  placeholder="{$Think.Lang.verification_code}">
+        <div class="control-group">
+          <div class="controls">
+            <img src="#" id="v_code_img">
+          </div>
+        </div>
+        </if>
+        <button class="btn btn-large btn-primary" type="submit">{$Think.Lang.register}</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?s=/home/user/login">{$Think.Lang.had_a_account}</a>
+      </form>
+
+    </div> <!-- /container -->
+
+
+ <include file="Common/footer" />
+
+ <script type="text/javascript">
+ $(function(){
+    $("#v_code_img").attr("src" , DocConfig.pubile+'/verifyCode.php');
+    $("#v_code_img").click(function(){
+      var v_code_img = $("#v_code_img").attr("src");
+      $("#v_code_img").attr('src' ,v_code_img+'?'+Date.parse(new Date()) );
+    }); 
+ });
+
+</script>

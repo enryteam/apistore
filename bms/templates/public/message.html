@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<?php include T(ROUTE_M,'public','header');?>
+	</head>
+	<script>
+		var url="<?php echo $url;?>";
+		window.onload=function()
+		{
+			setTimeout(locationTo,<?php echo $ms;?>);
+		};
+		function locationTo()
+		{
+			if(url.length)
+				location.href=url;
+			else
+				history.go(-1);
+		}
+	</script>
+	<body>
+		<div class="container">
+			<div class="jumbotron" style="margin-top:15%;">
+				<?php if($code=='success'):?>
+				<p class="text-success"><span class=" fa-check-circle fa"></span>&nbsp;<?php echo $message;?></p>
+				<?php elseif($code=='message'):?>
+				<p class="text-info"><span class="fa-info-circle fa"></span>&nbsp;<?php echo $message;?></p>
+				<?php elseif($code=='danger'):?>
+				<p class="text-danger"><span class="fa-times-circle fa"></span>&nbsp;<?php echo $message;?></p>
+				<?php endif;?>
+				<small>页面将在3秒内跳转，<a href="javascript:;" onclick="javascript:locationTo();" class="tiny">点击继续 </a></small>
+			</div>
+		</div>
+	</body>
+</html>

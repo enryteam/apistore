@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{$item.item_name} 接口文档/技术文档/在线Api文档</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="DNT">
+    <link href="__PUBLIC__/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/apistore.css" rel="stylesheet">
+      <script type="text/javascript">
+      var DocConfig = {
+          host: window.location.origin,
+          app: "{:U('/')}",
+          pubile:"__PUBLIC__",
+      }
+
+      DocConfig.hostUrl = DocConfig.host + "/" + DocConfig.app;
+      </script>
+      <script src="__PUBLIC__/js/lang.{:LANG_SET}.js?v=2"></script>
+  </head>
+  <body>

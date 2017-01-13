@@ -1,0 +1,40 @@
+&lt;cardno&gt;320623198904240073&lt;/cardno&gt;&lt;sex&gt;男&lt;/sex&gt;&lt;folk&gt;汉&lt;/folk&gt;&lt;birthday&gt;1989年04月24日&lt;/birthday&gt;&lt;address&gt;江苏省丰县掘港镇江海中路44号&lt;/address&gt;&lt;issue_authority&gt;&lt;/issue_authority&gt;&lt;valid_period&gt;&lt;/valid_period&gt;
+
+	</fieldset>
+	</div>
+	<div class="right img">
+		<fieldset>
+			<legend>图片</legend>
+			<a href="http://ocr.ccyunmai.com/upload/idcard/20160301/1456843860634.jpeg" target="_blank" title="查看大图"  alt="查看大图">查看大图</a>
+			<img src="http://ocr.ccyunmai.com/upload/idcard/20160301/1456843860634.jpeg" width="100%" />
+			
+		</fieldset>
+	</div>
+	<div class="clear"></div>
+</div>
+		
+</div>
+</div>
+</div>
+
+<footer class="wrap">
+	<div class="footer">
+		CopyRight &copy; 2005-2012 厦门云脉技术有限公司 <br/>备案/许可证号：<a href="http://www.miibeian.gov.cn" target="_blank">闽ICP备10012112号-3</a>  经营许可证号：350298400001045
+	</div>
+	<span style="display:none">
+		<script src="http://s19.cnzz.com/stat.php?id=4882278&web_id=4882278&online=1&show=line" language="JavaScript"></script>
+		<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0715a22d51f84901147f483d5111e906' type='text/javascript'%3E%3C/script%3E"));
+</script>
+		
+	</span>
+</footer>
+</body>
+</html>
+
+<script>
+$(document).ready(function(){	
+	/*console.log(">>>>>>>>" + $("scanAction").val());*/
+});
+</script>

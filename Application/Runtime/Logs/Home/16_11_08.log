@@ -1,0 +1,90 @@
+[ 2016-11-08T11:38:01+08:00 ] 117.62.227.9 /index.php?s=%2fhome%2fuser%2flogin%26n976612%3dv931717
+ERR: 非法操作:login&n976612=v931717
+
+[ 2016-11-08T11:38:01+08:00 ] 117.62.227.9 /index.php?s=1%27%22
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:01+08:00 ] 117.62.227.9 /index.php?s=%27%22
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:01+08:00 ] 117.62.227.9 /index.php?s='"\'\");|]*{%0d%0a<%00>
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:01+08:00 ] 117.62.227.9 /index.php?s=%3f%27%3f%22
+ERR: SQLSTATE[HY000]: General error: 1 near "?": syntax error
+
+[ 2016-11-08T11:38:04+08:00 ] 117.62.227.9 /index.php?page_id=1&s=%27%22
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:05+08:00 ] 117.62.227.9 /index.php?page_id=1&s=1%27%22
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:05+08:00 ] 117.62.227.9 /index.php?page_id=1&s='"\'\");|]*{%0d%0a<%00>
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:05+08:00 ] 117.62.227.9 /index.php?page_id=1&s=%3f%27%3f%22
+ERR: SQLSTATE[HY000]: General error: 1 near "?": syntax error
+
+[ 2016-11-08T11:38:05+08:00 ] 117.62.227.9 /index.php?page_id=1&s=%2f1%27%20and%20sleep%284%29%3d%27
+ERR: SQLSTATE[HY000]: General error: 1 no such function: sleep
+
+[ 2016-11-08T11:38:06+08:00 ] 117.62.227.9 /index.php?page_id=1&s=%2f1%27%20and%20%28sleep%284%29%2b1%29%20limit%201%20--%20
+ERR: SQLSTATE[HY000]: General error: 1 near "limit": syntax error
+
+[ 2016-11-08T11:38:06+08:00 ] 117.62.227.9 /index.php?page_id=1&s=%2f1%27%20or%20%28sleep%284%29%2b1%29%20limit%201%20--%20
+ERR: SQLSTATE[HY000]: General error: 1 near "limit": syntax error
+
+[ 2016-11-08T11:38:06+08:00 ] 117.62.227.9 /index.php?page_id=1&s=%2f1%27%3dsleep%284%29%3d%27
+ERR: SQLSTATE[HY000]: General error: 1 no such function: sleep
+
+[ 2016-11-08T11:38:06+08:00 ] 117.62.227.9 /index.php?page_id=1&s=%2f1%27%3b%20waitfor%20delay%20%270%3a0%3a4%27%20--%20
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:06+08:00 ] 117.62.227.9 /index.php?page_id=1&s=%2f1%22%3b%20waitfor%20delay%20%270%3a0%3a4%27%20--%20
+ERR: SQLSTATE[HY000]: General error: 1 near "0": syntax error
+
+[ 2016-11-08T11:38:35+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:35+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:36+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 unrecognized token: "'%index.php"
+
+[ 2016-11-08T11:38:36+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:36+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:36+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 unrecognized token: "'%../../../../../../../../../../etc/passwd"
+
+[ 2016-11-08T11:38:36+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near "?": syntax error
+
+[ 2016-11-08T11:38:36+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 unrecognized token: "'%/../..//../..//../..//../..//../..//etc/passwd"
+
+[ 2016-11-08T11:38:38+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 no such function: sleep
+
+[ 2016-11-08T11:38:38+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near "limit": syntax error
+
+[ 2016-11-08T11:38:38+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near "limit": syntax error
+
+[ 2016-11-08T11:38:38+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 no such function: sleep
+
+[ 2016-11-08T11:38:38+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near "0": syntax error
+
+[ 2016-11-08T11:38:38+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near ";": syntax error
+
+[ 2016-11-08T11:38:38+08:00 ] 117.62.227.9 /index.php?s=/home/item/show/item_id/1
+ERR: SQLSTATE[HY000]: General error: 1 near "0": syntax error
+

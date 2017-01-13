@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php include T(ROUTE_M,'public','header');?>
+<script type="text/javascript" src="<?php echo JS_URL;?>My97DatePicker/WdatePicker.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<?php include T(ROUTE_M,'public','nav');?>
+		<div id="page-wrapper">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header">商品管理</h1>
+				</div>
+				<!-- /.col-lg-12 -->
+			</div>
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><?php echo isset($details["goods_id"])?'编辑':'添加'?></div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form role="form" method="post" class="goods_form" name="goods_form" id="goods_form" action="<?php echo pfUrl("","goods","detail")?>">
+                                        <input type="hidden" name="goods_id" value="<?php echo $details["goods_id"]?>">
+                                        <table class="table table-bordered table-hover">
+                                            <tbody>
+                                                <tr class="form-group">
+                                                    <td class="col-lg-2">商品标题</td>
+                                                    <td><input class="form-control" id="title" name="title" placeholder="商品标题"  value="<?php echo $details["title"]?>">
+                                                        <p class="help-block">字数上限为18字符</p></td>
+                                                </tr>
+                                                <tr class="form-group">
+                                                    <td>封面图</td>
+                                                    <td>
+                                                    	<a class="btn btn-default" onClick="$('#s_cover').trigger('click');" href="javascript:;">
+                                                    		<?php echo isset($details['cover'])?'替换' :'上传'; ?>
+                                                    	</a>
+                                                    	<br>
+														<input type="file" class="form-control" id="s_cover" style="display: none" name="s_cover" onchange="return uploadImg(this)" />
+                                                        <?php if($details['cover']){?>
+                                                        <span class="image_show"> 
+                                                        	<img width="100" height="100" src="<?php echo UPLOAD_URL.$details['cover'];?>">&nbsp;&nbsp; <input type="hidden" id="cover" name="cover" value="<?php echo $details['cover'];?>">
+                                                        	<br>
+                                                    	</span>
+                                                        <?php }else{?>
+                                                        <span class="image_show"> <input type="hidden" id="cover" name="cover" value="">
+                                                        	<br>
+                                                    	</span>
+                                                        <?php }?>
+                                                        <p class="help-block">格式为png、jpeg、jpg、gif</p>
+													</td>
+                                                </tr>
+                                                <tr class="form-group">
+                                                    <td class="col-lg-2">价格</td>
+                                                    <td><input class="form-control" id="price" name="price" placeholder="商品价格"  value="<?php echo $details["price"]?>">
+                                                        <p class="help-block"></p></td>
+                                                </tr>
+                                                <tr class="form-group">
+                                                    <td class="col-lg-2">商品简介</td>
+                                                    <td><textarea class="form-control"  name="intro" id="intro"><?php echo $details["intro"]?></textarea>
+                                                        <p class="help-block"></p></td>
+                                                </tr>
+                                                <tr class="form-group">
+                                                    <td>排序</td>
+                                                    <td>
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <input class="form-control" id="sort" name="sort" value="<?php echo isset($details["sort"]) ? $details["sort"] : 0 ;?>">
+                                                                <p class="help-block">当前已用sort最大值为<?php echo $max_sort?></p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="form-group">
+                                                    <td>商品内容</td>
+                                                    <td><textarea id="description" name="description" class="form-control"><?php echo htmlspecialchars($details["description"])?></textarea></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <button type="submit" class="btn btn-primary">提交</button>
+                                        <button type="reset" class="btn btn-default">重置</button>
+                                        <button type="button" onclick="window.history.go(-1);" class="btn btn-default">返回</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+			<!-- /.row -->
+		</div>
+		<!-- /#page-wrapper -->
+	</div>
+	
+<div class="modal" id="jcrop_modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary save" data-dismiss="modal">确定</button>
+                <button type="button" class="btn btn-default closed" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+    	
+<script language="javascript" type="text/javascript" src="<?php echo JS_URL;?>ajaxfileupload.js"></script>
+<script src="<?php echo JS_URL;?>jquery.validate.min.js"></script>
+<script src="<?php echo JS_URL;?>checks.js"></script>
+<link href="<?php echo CSS_URL;?>jquery.Jcrop.css" rel="stylesheet">
+<script src="<?php echo JS_URL;?>jquery.Jcrop.js"></script>
+<!-- kindeditor -->
+<link rel="stylesheet" href="<?php echo JS_URL;?>kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="<?php echo JS_URL;?>kindeditor/plugins/code/prettify.css" />
+<script charset="utf-8" src="<?php echo JS_URL;?>kindeditor/kindeditor.js"></script>
+<script charset="utf-8" src="<?php echo JS_URL;?>kindeditor/lang/zh_CN.js"></script>
+<script charset="utf-8" src="<?php echo JS_URL;?>kindeditor/plugins/code/prettify.js"></script>
+<script type="text/javascript">
+var editor;
+KindEditor.ready(function(K) {
+editor = K.create('textarea[id="description"]', {
+    minHeight:300,
+    resizeType : 1,
+    allowPreviewEmoticons : false,
+    allowImageUpload : true,
+    items : [
+        'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+        'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+        'insertunorderedlist', '|', 'emoticons', 'image', 'link']
+});
+
+});
+$("form").submit(function(){
+     editor.sync();
+});
+
+var flag;
+var show_name;
+var scale;
+var upload_num = 0;
+var upload_index = 0;
+var x,y,w,h;
+var block_name;
+var upload_imgs = "";
+var jcrop_api;
+var image_show;
+
+function uploadImg(obj) {
+    var imgfileId = $(obj).attr("id");
+    image_show = $(obj).parent().find(".image_show");
+    $.ajaxFileUpload({
+        fileElementId: imgfileId,
+        url:  '<?php echo pfUrl(null,'iimage','upload') ?>',
+        dataType: 'json',
+        data: {'img':imgfileId, 'thumbname': 'tmp'},
+        success: function (data, textStatus) {
+            if(data.code != 1){
+                alert(data.message);
+            }else{
+                var html = '';
+                html += '<img id="jcrop1" width="500px;" src="<?php echo UPLOAD_URL;?>'+data.data+'">&nbsp;&nbsp;<input type="hidden" id="img_url1" name="img_url1" value="'+data.data+'"><br>';
+                $("#jcrop_modal1").find(".modal-body").html(html);
+                $('#s_cover').siblings('a').html('替换');
+                $("#jcrop_modal1").modal({backdrop: 'static', keyboard: false})
+                x = y = w = h = 0;
+                $("#jcrop1").Jcrop({
+                    bgOpacity: 0.3,
+                    aspectRatio: 2,
+                    setSelect: [ 0, 0, 500, 500 ],
+                    onSelect: function(c){
+                        x = c.x;
+                        y = c.y;
+                        w = c.w;
+                        h = c.h;
+                    }
+                }, function(){
+                    jcrop_api = this;
+                });
+            }
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            var msg = "服务器出错，错误内容：" + XMLHttpRequest.responseText;
+            alert(msg);
+        }
+    });
+}
+
+$(function(){
+	$("#jcrop_modal1").find(".save").click(function(){
+        $.post('<?php echo pfUrl(null,'iimage','cut') ?>', {path: $("#img_url1").val(), 'replace': 'tmp', x: x, y: y, w: w, h: h}, function(data){
+            var html = "<img width='200px' src='<?php echo UPLOAD_URL;?>"+data.data+"'>";
+            var field_name = $(image_show).find("input:hidden").attr("name");
+            html += '<input type="hidden" id="'+field_name+'" name="'+field_name+'" value="'+data.data+'">';
+            $(image_show).html(html);
+        }, "json");
+    });
+})
+</script>
+	<?php include T(ROUTE_M,'public','footer');?>
+</body>
+</html>

@@ -1,0 +1,60 @@
+			<nav style="margin-bottom: 0" role="navigation" class="navbar navbar-default navbar-static-top">
+				<div class="navbar-header">
+					<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand"><?php echo $site_name;?>管理后台</a>
+				</div>
+				<!-- /.navbar-header -->
+				<ul class="nav navbar-top-links navbar-right">
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+							<i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-user">
+							<li>
+								<a href="<?php echo pcUrl('index','flush');?>"><i class="fa fa-refresh fa-fw"></i>刷新缓存</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="<?php echo pcUrl('index','logout');?>"><i class="fa fa-sign-out fa-fw"></i>退出登录</a>
+							</li>
+						</ul>
+						<!-- /.dropdown-user -->
+					</li>
+					<!-- /.dropdown -->
+				</ul>
+				<!-- /.navbar-top-links -->
+
+				<div role="navigation" class="navbar-default sidebar">
+					<div class="sidebar-nav navbar-collapse">
+						<ul id="side-menu" class="nav in">
+							<li>
+								<a href="<?php echo pcUrl('menu','index');?>"<?php if(ROUTE_C=='menu'&&ROUTE_A=='index') echo ' class="active"';?>>首页</a>
+							</li>
+							<?php foreach($menu_list as $row):?>
+							<li>
+								<?php if(count($row['children'])):?>
+								<a href="#"><?php echo $row['name'];?><span class="fa arrow"></span></a>
+								<ul class="nav nav-second-level collapse <?php if($row['in']) echo 'in';?>">
+									<?php foreach($row['children'] as $r):?>
+									<li>
+										<a href="<?php echo pcUrl($r['c'],$r['a']);?>"<?php if($r['active']) echo ' class="active"';?>><?php echo $r['name'];?></a>
+									</li>
+									<?php endforeach;?>
+								</ul>
+								<?php else:?>
+								<a href="<?php echo pcUrl($row['c'],$row['a']);?>"<?php if($row['active']) echo ' class="active"';?>><?php echo $row['name'];?></a>
+								<?php endif;?>
+								<!-- /.nav-second-level -->
+							</li>
+							<?php endforeach;?>
+						</ul>
+					</div>
+					<!-- /.sidebar-collapse -->
+				</div>
+				<!-- /.navbar-static-side -->
+			</nav>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title><?php echo $site_name;?>-后台管理系统</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="<?php echo CSS_URL;?>bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="<?php echo CSS_URL;?>plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="<?php echo CSS_URL;?>sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="<?php echo ATTMS_URL;?>font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!-- Custom CSS -->
+	<link href="<?php echo CSS_URL;?>custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><?php echo $site_name;?>-后台管理系统登录</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="loginForm" action="<?php echo pfUrl("","index","login");?>" role="form" method="post">
+                            <input type="hidden" name="dosubmit" value="dosubmit">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="请输入用户名" name="username" type="text" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="请输入密码" name="password" type="password" value="">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-xs-6">
+                                        <input class="form-control" type="text" name="checkcode" />
+                                    </div>
+                                    <div class="col-xs-6 checkcode">
+                                        <?php echo form::checkcode('checkcode',$code_len = 4, $font_size = 16, $width = 120, $height = 24, $font = '', $font_color = '#6F9043', $background = '#EEFAF6');?>
+                                    </div>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <input type="submit" class="btn btn-lg btn-success btn-block" value="登陆">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="<?php echo JS_URL;?>jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php echo JS_URL;?>bootstrap.min.js"></script>
+
+    <!-- JavaScript validate -->
+    <script src="<?php echo JS_URL;?>jquery.validate.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="<?php echo JS_URL;?>backend.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            login();
+        });
+    </script>
+</body>
+
+</html>

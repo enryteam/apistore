@@ -1,0 +1,100 @@
+listening on *:3000
+listening on *:3000
+Enry logged in
+Enry disconnected
+Wed, 15 Jun 2016 19:04:22 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:9:7
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/dntim/server/index.html'
+listening on *:3000
+ygy logged in
+Enry logged in
+Enry disconnected
+ygy disconnected
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:904:11)
+    at Server._listen2 (net.js:1042:14)
+    at listen (net.js:1064:10)
+    at Server.listen (net.js:1138:5)
+    at Object.<anonymous> (/home/htdocs/apistore/dntim/server/index.js:60:6)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+listening on *:3000
+Thu, 23 Jun 2016 08:12:29 GMT express deprecated res.sendfile: Use res.sendFile instead at index.js:9:7
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+Error: ENOENT, stat '/home/htdocs/apistore/service/live/index.html'
+
+module.js:340
+    throw err;
+    ^
+Error: Cannot find module 'mysql'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/home/htdocs/apistore/service/live/server_nzb.js:10:13)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+
+module.js:340
+    throw err;
+    ^
+Error: Cannot find module 'mysql'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/home/htdocs/apistore/service/live/server_nzb.js:10:13)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+Ok
+连接成功
+连接成功
+连接成功
+连接成功
+连接成功
+连接成功
+连接成功
+Ok
+Ok

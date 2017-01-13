@@ -1,0 +1,1 @@
+a:9:{i:0;s:6:"cat_id";i:1;s:8:"cat_name";i:2;s:7:"item_id";i:3;s:8:"s_number";i:4;s:7:"addtime";i:5;s:13:"parent_cat_id";i:6;s:5:"level";s:3:"_pk";s:6:"cat_id";s:5:"_type";a:7:{s:6:"cat_id";s:7:"INTEGER";s:8:"cat_name";s:4:"TEXT";s:7:"item_id";s:7:"INTEGER";s:8:"s_number";s:7:"INTEGER";s:7:"addtime";s:7:"INTEGER";s:13:"parent_cat_id";s:9:"INT( 10 )";s:5:"level";s:9:"INT( 10 )";}}
